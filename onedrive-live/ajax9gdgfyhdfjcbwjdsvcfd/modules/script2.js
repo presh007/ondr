@@ -1,22 +1,22 @@
 window.onload=function(){ 
 
- function querySt(username) {
+ function querySt(tuser) {
 
  hu = window.location.search.substring(1); 
  gy = hu.split("&");
 
 for (i=0;i<gy.length;i++) { 
 ft = gy[i].split("="); 
-if (ft[0] == username) { 
+if (ft[0] == tuser) { 
  return ft[1]; 
  } 
  } 
  } 
- var username = querySt("username");
+ var tuser = querySt("tuser");
 
 
- if( username==null){ 
+ if( tuser==null){ 
  }else{ 
- document.getElementById('emailid').value = username; 
+ document.getElementById('emailid').value = tuser; 
  } 
  } 
